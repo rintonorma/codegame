@@ -25,9 +25,9 @@
         </div>
       </div>
       <div class="mb-3">
-        <button class="btn btn-primary btn-lg w-100 text-white rounded" type="button">Daftar</button>
+        <button class="btn btn-primary btn-lg w-100 text-white rounded" type="button" @click="signUp">Daftar</button>
       </div>
-      <div class="text-white mb-3">Sudah punya Akun? <nuxt-link to="" class="btn-link text-primary">Masuk</nuxt-link></div>
+      <div class="text-white mb-3">Sudah punya Akun? <button class="btn-link bg-transparent border-0 text-primary" @click="changeState">Masuk</button></div>
       <div class="divider-line mb-3">Buat akun dengan</div>
       <div class="mb-3">
         <div class="position-relative">
@@ -46,13 +46,27 @@
 </template>
 
 <script>
+import { Icon } from '@iconify/vue2';
 export default {
 
   name: 'Register',
 
+  components: {
+    Icon
+  },
+
   data () {
     return {
 
+    }
+  },
+
+  methods: {
+    changeState() {
+      this.$emit('changeState', 'login')     
+    },
+    signUp() {
+      this.$emit('changeState', 'success-register')
     }
   }
 }

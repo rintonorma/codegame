@@ -5,10 +5,10 @@
       <button type="button" class="btn p-0 text-white" data-bs-dismiss="offcanvas" aria-label="Close"><Icon icon="ci:close-big" height="24px"/></button>
     </div>
     <div class="offcanvas-body">
-      <!-- <Login /> -->
-      <!-- <Register /> -->
-      <!-- <EmailConfirmation /> -->
-      <MainMenu />  
+      <Login v-if="state == 'login'" v-on:changeState="changeState"/>
+      <Register v-if="state == 'register'" v-on:changeState="changeState"/> 
+      <EmailConfirmation v-if="state == 'success-register'" v-on:changeState="changeState" />
+      <MainMenu v-if="state == 'loggedin'" v-on:changeState="changeState"/>  
     </div>
   </div>
 
@@ -34,7 +34,13 @@ export default {
 
   data () {
     return {
+       state: 'login'
+    }
+  },
 
+  methods: {
+    changeState(state) {
+      this.state = state
     }
   }
 }

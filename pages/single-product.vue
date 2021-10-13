@@ -2,22 +2,8 @@
   <section class="pt-0 pt-lg-4">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-4 featured-img">
-          <div class="ratio ratio-16x9 mb-3">
-            <img src="/img/games/Garena-Free-Fire.jpeg" class="object-cover rounded">
-          </div>
-          <div class="expander">
-            <div class="inner-bit">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vulputate vulputate arcu, etiam porttitor ullamcorper non. Dolor donec venenatis eleifend eros, lectus purus, volutpat lacus.   Tortor, lacinia diam mi, id fermentum est eu enim. Bibendum aliquam nulla consectetur sed feugiat. Viverra porttitor cras tellus, bibendum nulla eu etiam egestas. Morbi nisl, turpis id sit non nulla. In arcu a dui elementum vitae et scelerisque. Et blandit cursus aenean arcu.</p>
-
-              <p>Tincidunt faucibus non, sagittis, posuere adipiscing arcu pellentesque lectus vulputate. Sit et, velit est non ut. In ultrices cursus semper semper viverra varius. Nec et euismod condimentum sapien porttitor dui id. At proin nisi aliquet parturient aenean bibendum eu tellus. Proin tortor sapien eu pulvinar ut sem est. Maecenas mattis sapien molestie dapibus ac. Viverra metus donec massa lorem feugiat bibendum. Sagittis, est nunc maecenas phasellus vitae, ipsum odio. Nulla nec venenatis iaculis ut cras scelerisque. Purus sit volutpat fermentum consectetur aliquam. Tristique tristique nec sodales condimentum nam fringilla tincidunt volutpat odio. Lacus, quisque non sit velit sed arcu luctus. Risus auctor nunc aliquet quis dolor. Purus id ornare sed ac leo a eleifend sapien tincidunt.</p>
-
-              <p>Proin libero, accumsan mauris pulvinar tristique bibendum purus. Vel velit elementum pulvinar tortor, suspendisse. Praesent consequat convallis phasellus morbi vitae eu metus. Fringilla rhoncus, elementum vel gravida commodo faucibus. Massa amet ipsum nunc nisl, pulvinar ac est, at in. Id in vestibulum aliquam eget lectus tellus. Mi neque massa et faucibus. Augue ante convallis mattis odio mauris malesuada pulvinar. Justo, amet ut ac a. Imperdiet tortor arcu scelerisque ullamcorper ultrices sagittis. Et, in massa nunc lorem sed magna amet phasellus cursus.</p>
-
-              <p>Velit rhoncus ultrices pretium elit tincidunt suscipit amet vitae. Neque non risus facilisis sapien. Scelerisque mauris neque, tortor interdum arcu ipsum. Dui purus amet dolor egestas lobortis morbi. Egestas id cras viverra quisque nibh. In auctor id vulputate id lobortis. Mauris nunc pulvinar in condimentum ultrices faucibus dolor fames nullam.</p>
-            </div>
-          </div>
-          <button class="btn btn-link text-primary expand-toggle" href="javascript:void(0)">Tampilkan semua</button>
+        <div class="col-12 col-lg-4">
+          <ProductDetails />
         </div>
         <div class="col-12 col-lg-8 content-wrap">
           <div class="d-grid gap-3">
@@ -97,7 +83,7 @@
                       <div class="accordion-body">
                         <div class="row">
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -109,10 +95,10 @@
                                   <div class="text-dark">Bank BCA</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -124,10 +110,10 @@
                                   <div class="text-dark">Bank BRI</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -139,10 +125,10 @@
                                   <div class="text-dark">Bank BNI</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -154,10 +140,10 @@
                                   <div class="text-dark">Bank BTPN</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -169,7 +155,7 @@
                                   <div class="text-dark">Bank CIMB</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                         </div>
                       </div>
@@ -201,7 +187,7 @@
                       <div class="accordion-body">
                         <div class="row">
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -213,10 +199,10 @@
                                   <div class="text-dark">Gopay</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -228,10 +214,10 @@
                                   <div class="text-dark">OVO</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -243,10 +229,10 @@
                                   <div class="text-dark">ShopeePay</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -258,10 +244,10 @@
                                   <div class="text-dark">DANA</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -273,7 +259,7 @@
                                   <div class="text-dark">LinkAja</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                         </div>
                       </div>
@@ -305,7 +291,7 @@
                       <div class="accordion-body">
                         <div class="row">
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -317,10 +303,10 @@
                                   <div class="text-dark">Telkomsel</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -332,10 +318,10 @@
                                   <div class="text-dark">Indosat</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -347,10 +333,10 @@
                                   <div class="text-dark">XL</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -362,10 +348,10 @@
                                   <div class="text-dark">Axis</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -377,7 +363,7 @@
                                   <div class="text-dark">Smartfren</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                         </div>
                       </div>
@@ -406,7 +392,7 @@
                       <div class="accordion-body">
                         <div class="row">
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -418,10 +404,10 @@
                                   <div class="text-dark">Indomaret</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                           <div class="col-12 col-lg-6 mb-3">
-                            <nuxt-link to="" class="btn-p">
+                            <button type="button" class="btn-p border-0 bg-transparent w-100" @click="checkout">
                               <div class="card border-0 rounded shadow-sm">
                                 <div class="card-header border-bottom">
                                   <div class="d-flex align-items-center justify-content-between">
@@ -433,7 +419,7 @@
                                   <div class="text-dark">Alfamart</div>
                                 </div>
                               </div>
-                            </nuxt-link>
+                            </button>
                           </div> <!-- col -->
                         </div>
                       </div>
@@ -443,7 +429,7 @@
                 </div><!-- end accordion -->
 
                 <div class="d-flex justify-content-center w-100">
-                  <button class="btn btn-primary btn-lg px-lg-5 rounded d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#modalDefault">
+                  <button class="btn btn-primary btn-lg px-lg-5 rounded d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#modalDefault" @click="howTo">
                     <Icon icon="maki:information" height="24px"/>
                     Panduan Pembayaran
                   </button>
@@ -455,7 +441,63 @@
       </div>
     </div>
 
-    <modal-default>
+    <modal-default v-if="modalCheckout" @close="modalClosed">
+      <template slot="modal-title">Detail Pembelian</template>
+      <template slot="modal-close">&nbsp;</template>
+      <template slot="modal-content">
+        <div class="mb-3">Mohon konfirmasi nama pengguna  anda sudah benar.</div>
+        <div class="d-grid gap-3">
+          <div class="d-flex align-items-center justify-content-between" v-for="item in details" :key="item.id">
+            <div>{{ item.var }}:</div>
+            <div class="fw-bold text-end">{{ item.value }}</div>
+          </div>
+          <div class="d-flex align-items-center justify-content-between">
+            <div>Bayar dengan:</div>
+            <img src="/img/methods/dana.svg">
+          </div>
+          <div class="divider-dots"></div>
+          <div class="d-flex align-items-center justify-content-between">
+            <div>Total Pembayaran:</div>
+            <div class="fw-bold text-end">IDR. 1.000.000</div>
+          </div>
+          <div class="divider-dots"></div>
+          <h5 class="m-0">Info Billing</h5>
+          <form>
+            <div class="mb-3">
+              <input type="email" class="form-control form-control-lg rounded" id="emailInput" placeholder="Masukkan alamat Email">
+              <small>Masukan alamat email untuk mendapatkan bukti pembayaran</small>
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Ingat Saya
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </template>
+      <template slot="modal-cta">
+        <div class="row w-100">
+          <div class="col-12 col-lg-6">
+            <button class="btn btn-link btn-lg text-dark rounded px-5 w-100">Batalkan</button>
+          </div>
+          <div class="col-12 col-lg-6">
+            <button class="btn btn-primary btn-lg rounded px-5 w-100">Konfirmasi</button>
+          </div>
+        </div>
+        
+        
+        <div class="text-center text-secondary"><small>Dengan klik "Konfirmasi", berarti Anda setuju dengan <nuxt-link to="">Syarat dan Ketentuan Pengguna.</nuxt-link></small></div>
+        <div class="d-flex align-items-center gap-2">
+          <Icon icon="bi:shield-fill-check" height="18px" style="color: #27AE60;"/>
+          <small>PAYMENT SECURED</small>
+        </div>
+      </template>
+    </modal-default>
+
+    <modal-default v-if="modalHowTo" @close="modalClosed">
       <template slot="modal-title">Panduan Pembayaran</template>
       <template slot="modal-content">
         <ul class="nav nav-pills gap-2 mb-3 howto" id="pills-tab" role="tablist">
@@ -543,16 +585,47 @@
 <script>
 import { Icon } from '@iconify/vue2';
 import ModalDefault from '~/components/ModalDefault.vue';
+import ProductDetails from '~/components/ProductDetails.vue';
 export default {
 
   name: 'single-post',
 
   components: {
-    Icon
+    Icon,
+    ProductDetails
   },
 
   data () {
     return {
+      modalHowTo: false,
+      modalCheckout: false,
+      details: [
+        {
+          id: 1,
+          var: 'Item',
+          value: '40 Diamonds + 4 Bonus'
+        },
+        {
+          id: 2,
+          var: 'Nama Pengguna',
+          value: 'Hunter666'
+        },
+        {
+          id: 3,
+          var: 'Order Id',
+          value: '690048783'
+        },
+        {
+          id: 4,
+          var: 'Harga',
+          value: 'IDR. 1.000.000'
+        },
+        {
+          id: 5,
+          var: 'Tax (Ppn 10%)',
+          value: 'IDR. 10.000'
+        },
+      ],
       nominal: [
         {
           id: 1,
@@ -607,7 +680,24 @@ export default {
         $this.html("Tutup");
       }
     });
-  }
+  },
+
+  methods: {
+    howTo() {
+      this.modalClosed()
+      this.modalHowTo = true
+      setTimeout(() => $('#modalDefault').modal('show'), 100)
+    },
+    checkout() {
+      this.modalClosed()
+      this.modalCheckout = true
+      setTimeout(() => $('#modalDefault').modal('show'), 100)
+    },
+    modalClosed() {
+      this.modalHowTo = false
+      this.modalCheckout = false
+    }
+  },
 }
 </script>
 

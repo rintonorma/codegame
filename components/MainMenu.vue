@@ -16,7 +16,7 @@
       </li>
     </ul>
     <div class="position-absolute bottom-0 w-100 border-top border-primary py-3">
-      <nuxt-link to="" class="btn rounded p-3 d-flex align-items-center gap-2 text-white"><Icon icon="bx:bxs-log-out" height="24px"/><h5 class="m-0">Keluar</h5></nuxt-link>
+      <button type="button" class="btn bg-transparent border-0 rounded p-3 d-flex align-items-center gap-2 text-white" @click="changeState"><Icon icon="bx:bxs-log-out" height="24px"/><h5 class="m-0">Keluar</h5></button>
     </div>
   </div>
 </template>
@@ -50,6 +50,12 @@ export default {
         },
       ],
     }
+  },
+
+  methods: {
+    changeState() {
+      this.$emit('changeState', 'login')     
+    },
   }
 }
 </script>

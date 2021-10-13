@@ -1,5 +1,5 @@
 <template>
-  <div class="modal fade" id="modalDefault" tabindex="-1" aria-labelledby="modalDefaultLabel" aria-hidden="true">
+  <div class="modal fade" :id="id" tabindex="-1" aria-labelledby="modalDefaultLabel" aria-hidden="true" :ref="id">
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
@@ -28,7 +28,12 @@
 <script>
 import { Icon } from '@iconify/vue2';
 export default {
-  
+  props: {
+    id: {
+      type: String,
+      default: 'modalDefault'
+    }
+  },
   name: 'ModalDefault',
   components: {
     Icon
@@ -38,7 +43,16 @@ export default {
 
     }
   },
-  
+  mounted(){
+    this.liten()
+  },
+  methods: {
+    liten() {
+      $(`#${this.id}`).on('shown.bs.modal', (e) => {
+        this.$emit('shown', e)
+      })
+    }
+  }
 }
 </script>
 
