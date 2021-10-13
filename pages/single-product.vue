@@ -484,7 +484,7 @@
             <button class="btn btn-link btn-lg text-dark rounded px-5 w-100">Batalkan</button>
           </div>
           <div class="col-12 col-lg-6">
-            <button class="btn btn-primary btn-lg rounded px-5 w-100">Konfirmasi</button>
+            <button class="btn btn-primary btn-lg rounded px-5 w-100" @click="summary">Konfirmasi</button>
           </div>
         </div>
         
@@ -693,6 +693,11 @@ export default {
       this.modalCheckout = true
       setTimeout(() => $('#modalDefault').modal('show'), 100)
     },
+    summary() {
+      this.$router.push('summary')
+      $('#modalDefault').modal('hide')
+      setTimeout(() => this.modalCheckout = false, 100)
+    },
     modalClosed() {
       this.modalHowTo = false
       this.modalCheckout = false
@@ -707,16 +712,6 @@ export default {
       img{
         opacity: 0;
         transition: all .2s ease;
-      }
-    }
-  }
-  .btn-p{
-    .card{
-      transition: all ease .5s;
-
-      &:hover{
-        box-shadow: 0 .5rem 1rem rgb(0 0 0 / 8%) !important;
-        transform: scale(1.02);
       }
     }
   }

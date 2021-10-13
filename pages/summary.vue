@@ -27,7 +27,7 @@
                   <button class="btn btn-link text-dark btn-lg rounded w-100">Lakukan Pembelian Lain</button>    
                 </div>
                 <div class="col-12 col-lg-6">
-                  <button class="btn btn-primary btn-lg rounded w-100">Lanjutkan Pembayaran</button>
+                  <button class="btn btn-primary btn-lg rounded w-100" @click="payments">Lanjutkan Pembayaran</button>
                 </div>
               </div>
             </div>
@@ -73,6 +73,12 @@ export default {
         },
       ],
     }
+  },
+
+  methods: {
+    payments() {
+      this.$router.push('payments')
+    },
   }
 }
 </script>

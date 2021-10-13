@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section>
+    <section class="bg-white">
       <div class="container">
         <h5 class="text-secondary mb-2 card-subtitle">DUKUNGAN PELANGGAN</h5>
         <h2 class="fw-bold mb-4 card-title">Hubungi kami</h2>
