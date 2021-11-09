@@ -146,11 +146,7 @@ export default {
           },
           {
             "breakpoint": 480,
-            "settings": {
-              "arrows": false,
-              "slidesToShow": 2,
-              "rows": 2,
-            }
+            "settings": "unslick"
           }
         ]
       },
