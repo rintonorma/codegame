@@ -16,9 +16,9 @@
               <h6>Ringkasan Pesanan</h6>
               <h6 class="mb-4">1x Mobile Legends, 400 Diamonds + 80 Bonus</h6>
               <div class="d-grid gap-3">
-                <div class="d-flex align-items-center justify-content-between" v-for="item in details" :key="item.id">
-                  <div>{{ item.var }}:</div>
-                  <div class="fw-bold text-end">{{ item.value }}</div>
+                <div class="d-flex justify-content-between gap-3" v-for="item in details" :key="item.id">
+                  <div class="flex-shrink-0">{{ item.var }}:</div>
+                  <div class="overflow-break fw-bold text-end">{{ item.value }}</div>
                 </div>
               </div>
               <div class="divider"></div>
@@ -48,13 +48,13 @@ export default {
       details: [
         {
           id: 1,
-          var: 'Metode Pembayaran:',
+          var: 'Metode Pembayaran',
           value: 'DANA'
         },
         {
           id: 2,
           var: 'Id Pembelian',
-          value: '123456789101112131415'
+          value: '123456789101112131415123456789101112131415'
         },
         {
           id: 3,

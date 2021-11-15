@@ -66,6 +66,12 @@ ul{
   list-style: none;
   padding: 0;
 }
+.overflow-break{
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  max-width: 190px;
+}
 .bg-hive{
   background: #A90015 url('/img/bg-hive.png') no-repeat;
   background-size: cover;
