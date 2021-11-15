@@ -72,6 +72,14 @@ ul{
   hyphens: auto;
   max-width: 190px;
 }
+.overflow-auto{
+  flex-wrap: inherit;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+}
 .bg-hive{
   background: #A90015 url('/img/bg-hive.png') no-repeat;
   background-size: cover;

@@ -15,7 +15,7 @@
       <h5 class="text-white mb-2 card-subtitle">GAME DAN VOUCHER</h5>
       <h2 class="text-white fw-bold mb-4 card-title">Flash Top-Up</h2>
 
-      <ul class="tabs-slider nav nav-pills gap-2 mb-3 howto" id="pills-tab" role="tablist">
+      <ul class="tabs-slider nav nav-pills gap-2 mb-3 howto overflow-auto" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active p-3 px-5 rounded-pill" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true"><h6 class="m-0">Populer</h6></button>
         </li>

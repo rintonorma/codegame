@@ -9,7 +9,7 @@
     </div>
     <div class="container">
       <section>
-        <ul class="nav nav-pills gap-2 mb-3" id="pills-tab" role="tablist">
+        <ul class="nav nav-pills gap-2 mb-3 overflow-auto" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link active btn-lg rounded-pill" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true">Semua</button>
           </li>
