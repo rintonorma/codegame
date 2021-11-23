@@ -127,6 +127,16 @@ ul{
     border-color: #ff5a5e;
   }
 }
+.btn-link {
+  font-weight: 400;
+  color: #ff5a5e;
+  text-decoration: none;
+
+  &:hover{
+    color: #ff5a5e;
+    text-decoration: underline;
+  }
+}
 .btn-p{
   .card{
     transition: all ease .5s;
